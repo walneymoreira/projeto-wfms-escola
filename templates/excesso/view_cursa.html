@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+     <title>Lista</title>  
+ </head>  
+ <body>
+ <form style=" width: 100vw; margin-left : 30vw;">
+ <h3>Informacões dos Alunos matriculados na Escola</h3>   
+ <table border=5>  
+ <thead>  
+ <td>ID</td>  
+ <td>Name</td>  
+ <td>Email</td>   
+ <td>Address</td>  
+ </thead>  
+ {% for row in rows %}  
+ <tr>  
+ <td>{{row["id"]}}</td>  
+ <td>{{row["name"]}}</td>  
+ <td>{{row["email"]}}</td>  
+ <td>{{row["address"]}}</td>  
+ </tr>  
+ {% endfor %}   
+ </table>
+ <br><br>  
+ <a href="/">Retorna a página inicial</a>  
+</form>  
+ </body>  
+ </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+    <style>
+        body {
+            background-color:rgb(233, 199, 119);
+        }  
+     <title>Lista</title>  
+ </style>
+ </head>  
+ <body>
+ <form style=" width: 100vw; margin-left : 30vw;">
+ <h3>Informacões dos Alunos matriculados na Escola</h3>   
+ <table border=5>  
+ <thead>  
+ <td>CPF</td>  
+ <td>Nome</td>  
+ <td>Endereço</td>   
+ <td>Telefone/td>  
+ <td>Nascimento/td>  
+ </thead>  
+ {% for row in rows %}  
+ <tr>  
+ <td>{{row["cpf_aluno"]}}</td>  
+ <td>{{row["nome"]}}</td>  
+ <td>{{row["endereco"]}}</td>  
+ <td>{{row["telefone"]}}</td>  
+ <td>{{row["data_nasc"]}}</td>  
+ </tr>  
+ {% endfor %}   
+ </table>
+ <br><br>  
+ <a href="/">Retorna a página inicial</a>  
+</form>  
+ </body>  
+ </html>

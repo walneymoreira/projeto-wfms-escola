@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(110, 79, 13, 0.76);
+  }
+  
+  /*
+   * Create dark grey header with a white logo
+   */
+    
+  header {
+    background-color: #661d1d;
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+  }
+   
+  header h1.logo {
+    margin: 0;
+    font-size: 1.7em;
+    color: rgb(29, 56, 173);
+    text-transform: uppercase;
+    float: left;
+  }
+   
+  header h1.logo:hover {
+    color: rgb(36, 194, 173);
+    text-decoration: none;
+  }
+   
+  /*
+   * Center the body content
+   */
+    
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+   
+  div.jumbo {
+    padding: 10px 0 30px 0;
+    background-color: #802525;
+    -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+   
+  h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+   
+  h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: rgb(11, 168, 90);
+  }
+
+  
+/*
+ * Display navigation links inline
+ */
+ 
+.menu {
+    float: right;
+    margin-top: 8px;
+  }
+   
+  .menu li {
+    display: inline;
+  }
+   
+  .menu li + li {
+    margin-left: 35px;
+  }
+   
+  .menu li a {
+    color: rgb(219, 125, 125);
+    text-decoration: none;
+  }

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2 class='text-center text-muted mb-3'>Olá Bem vindo ao web site - Aplicativo Escola - DEV WFMS</h2>
+<h3 class='text-center text-muted mb-3'>Aplicativo CRUD - Flask - SQLite</h3>
+<h5 class='text-center text-muted mb-3'>Acesso as tabelas e opções do sistema</h5>
+<body>
+<table class='table table-bordered'>
+<tr>
+<td><a href="/matriculas">Matricular Alunos</a><br><br> 
+<td><a href="/consultas">Consultas</a></td><br><br> 
+<td><a href="/relatorios">Relatórios</a></td><br><br> 
+<td><a href="/usuarios">Usuários</a><br><br> </tr>
+<tr>
+<td><a href="/alunos">Manutenção da Tabela Alunos</a><br><br>  
+<td><a href ="/professores">Manutenção da Tabela Professores</a><br><br>  
+<td><a href="/cursos">Manutenção da Tabela de Cursos</a><br><br>  
+<td><a href="/disciplinas">Manutenção da Tabela de Disciplinas</a><br><br>  
+<td><a href="/pre_requisitos">Manutenção da Tabela de pré-requisitos</a><br><br>  
+<td><a href="/departamentos">Manutenção da Tabela de Departamentos</a><br><br>  
+<td><a href="/compoe">Manutenção da Tabela de Compoe</a><br><br>  
+<td><a href="/cursa">Manutenção da Tabela de Cursa</a></td><br><br>  
+</tr>
+<script src="{{ url_for('static', filename = 'js/script.js') }}"></script>
+</table>
+</body>
+{% endblock %}
+
