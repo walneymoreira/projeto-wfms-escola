@@ -74,7 +74,7 @@ def delete_user(uid):
     cur=con.cursor()
     cur.execute("delete from users where UID=?",(uid,))
     con.commit()
-    msg = 'Usuário apagado com sucesso!'
+    msg = 'Usuário foi apagado com sucesso!'
     flash(msg,'warning')
     return redirect(url_for("usuarios"))
     
